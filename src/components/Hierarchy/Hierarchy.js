@@ -48,9 +48,12 @@ export default function Hierarchy() {
       .data(root.descendants(), (d) => d.data.name);
 
     const linksUpdate = () => {
-      const links = svg.selectAll('path').data(root.links(), (d) => {
-        return `path-${d.source.data.name}-${d.target.data.name}`;
-      });
+      const links = svg
+        .selectAll('path')
+        .data(
+          root.links(),
+          (d) => `path-${d.source.data.name}-${d.target.data.name}`,
+        );
 
       links
         .enter()
