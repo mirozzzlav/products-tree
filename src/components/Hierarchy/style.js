@@ -3,6 +3,8 @@ import { css } from '@emotion/css';
 const style = {
   wrapper: css({
     height: '100%',
+    width: '100%',
+    overflow: 'auto',
   }),
   svg: css({
     width: '100%',

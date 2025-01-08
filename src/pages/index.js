@@ -1,5 +1,6 @@
-import DetailPage from './DetailPage';
-import ListPage from './ListPage';
+import ImportDataPage from 'src/pages/ImportDataPage';
+import DetailPage from 'src/pages/DetailPage';
+import ListPage from 'src/pages/ListPage';
 
 const pages = [
   {
@@ -16,6 +17,11 @@ const pages = [
     id: 'list',
     route: 'list',
     pageComponent: ListPage,
+  },
+  {
+    id: 'import-data',
+    route: 'import-data',
+    pageComponent: ImportDataPage,
   },
 ];
 
